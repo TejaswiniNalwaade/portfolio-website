@@ -1,60 +1,102 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-  <title>Tejaswini Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: #1e293b;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+    button {
+      background: #6366f1;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body>
-
-  <!-- Navbar -->
-  <nav>
-    <h2>Tejaswini</h2>
-  </nav>
-
-  <!-- Home Section -->
-  <section class="home">
-    <img src="profile.jpg" alt="My Photo">
-    <h1>Hello, I'm Tejaswini 👋</h1>
-    <p>Aspiring Software Developer</p>
-  </section>
-
-  <!-- About -->
-  <section>
+<body><header>
+  <h1>Ankitha</h1>
+  <p>BCA Student | Aspiring Developer</p>
+</header><nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav><section id="about">
+  <div class="card">
     <h2>About Me</h2>
-    <p>I am a BCA Data Science student passionate about coding, problem-solving, and building applications.</p>
-  </section>
-
-  <!-- Skills -->
-  <section>
+    <p>I am a BCA final year student preparing for placements. I am learning Java, Python, and Data Structures.</p>
+  </div>
+</section><section id="skills">
+  <div class="card">
     <h2>Skills</h2>
     <ul>
-      <li>Python, Java</li>
+      <li>Java</li>
+      <li>Python</li>
       <li>HTML, CSS, JavaScript</li>
-      <li>MySQL</li>
     </ul>
-  </section>
-
-  <!-- Projects -->
-  <section>
+  </div>
+</section><section id="projects">
+  <div class="card">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Library Management System</h3>
-      <p>Built using Python and MySQL to manage records efficiently.</p>
-    </div>
-
-    <div class="project">
-      <h3>COVID-19 Data Analysis</h3>
-      <p>Performed EDA and visualization using Python.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section>
+    <p>Portfolio Website (this site)</p>
+    <p>Hospital Management System (coming soon)</p>
+  </div>
+</section><section id="contact">
+  <div class="card">
     <h2>Contact</h2>
-    <p>Email: tejaswininalwaade@gmail.com</p>
-  </section>
-
-</body>
+    <p>Email: yourmail@gmail.com</p>
+    <button onclick="showMessage()">Say Hi</button>
+  </div>
+</section><footer>
+  <p>© 2026 Ankitha</p>
+</footer><script>
+function showMessage() {
+  alert("Thanks for visiting my portfolio!");
+}
+</script></body>
 </html>
-
-
